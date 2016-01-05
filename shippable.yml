@@ -2,6 +2,7 @@ language: ruby
 rvm:
   - 1.9.3
 
+build_image: drydock/u12ruball:tip
 addons:
   firefox: "28.0"
 services:
@@ -18,7 +19,7 @@ env:
 
 before_script: 
   - psql -c 'create database "sample-rubyonrails-postgres-heroku_test";' -U postgres
-  - /etc/init.d/xvfb start 
+#  - /etc/init.d/xvfb start 
 
-after_script:
-  - /etc/init.d/xvfb stop
+#after_script:
+ # - /etc/init.d/xvfb stop
