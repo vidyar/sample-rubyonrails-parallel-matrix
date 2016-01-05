@@ -3,7 +3,7 @@ language: ruby
 rvm:
   - 1.9.3
 
-build_image: drydock/u12ruball:tip
+build_image: drydock/u14ruball:tip
 addons:
   firefox: "28.0"
 services:
